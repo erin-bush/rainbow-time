@@ -44,7 +44,7 @@ module.exports = (options) => ({
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: '.',
     port: 3001,
   },
 })
