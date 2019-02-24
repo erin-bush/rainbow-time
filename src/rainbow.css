@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.explainer {
+  margin: 100px auto;
+  width: 500px;
+  text-align: center;
+}
+
+
+ul {
+	margin: 100px auto;
+	padding: 0;
+	position: relative;
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+}
+
+ul li {
+	list-style: none;
+	border-radius: 50%;
+	border: 50px solid #000;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	border-bottom-color: transparent !important; 
+	transform: translate(-50%, -50%);
+}
+
+.rotate {
+	animation: load 5s infinite alternate;
+}
+
+@keyframes load {
+	0% {
+		transform: translate(-50%, -50%) rotate(-35deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(315deg);
+	}
+}
